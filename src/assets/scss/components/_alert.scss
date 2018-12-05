@@ -1,0 +1,65 @@
+.alert-card {
+  background-color: $card-background-color;
+  position: fixed;
+  top: 45px;
+  left: 25px;
+  border: 1px solid $border-color-secondary;
+  border-radius: 5px;
+  box-shadow: $soft-box-shadow;
+  padding: 20px;
+  width: 360px;
+  z-index: 1006;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  h4 {
+    text-shadow: 1px 1px 1px $card-background-color;
+    display: flex;
+    align-items: center;
+    i {
+      font-size: 24px;
+      margin-left: 7px;
+    }
+  }
+  p {
+    color: $title-color-primary;
+    margin-top: 7px;
+  }
+
+  a.alert-close {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    i {
+      font-size: 22px;
+      color: $copyright-text-color;
+      &:hover {
+        color: $info-text-color;
+      }
+    }
+  }
+}
+
+.success {
+  color: $green-active;
+}
+
+.error {
+  color: $error-color;
+}
+
+.primary {
+  color: $text-color-primary;
+}
+
+.info {
+  color: #f1c40f;
+}
+
+.alert-divider {
+  background-color: rgba(255, 255, 255, .1);
+  height: 1px;
+  width: 100%;
+  margin-top: 15px;
+}

@@ -1,0 +1,10 @@
+.divider {
+  border-bottom: 1px solid $divider-color-basic;
+  margin-bottom: 10px;
+}
+
+.divider-orange-large {
+  border-bottom: 3px solid $orange-color;
+  width: 75px;
+  margin-right: 5px;
+}

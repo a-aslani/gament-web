@@ -1,0 +1,27 @@
+.toolbar {
+  position: absolute;
+  bottom: 80px;
+  right: auto;
+  left: auto;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  min-width: 100px;
+  border-radius: 25px;
+  z-index: 1005;
+  p {
+    font-size: .8rem;
+  }
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    bottom: auto;
+    right: 42px;
+    left: 0;
+    border-top: 7px solid #000000;
+  }
+}

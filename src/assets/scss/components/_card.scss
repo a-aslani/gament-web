@@ -1,0 +1,94 @@
+.game-card-link {
+  position: relative;
+  z-index: 1;
+  &:hover .card {
+    box-shadow: $card-hover-shadow;
+    transform: translateY(-5px);
+  }
+  &:hover h4 {
+    color: $text-color-primary;
+    text-shadow: 1px 1px 5px $border-color-dark;
+  }
+  height: auto;
+}
+
+.card {
+  display: flex;
+  background-color: $card-background-color;
+  justify-content: space-between;
+  margin: 8px 0;
+  height: auto;
+  border: 1px solid $border-color-secondary;
+  border-radius: 3px;
+  transition: all .3s ease;
+}
+
+.game-card {
+  position: relative;
+  z-index: -1;
+}
+
+.game-card-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  direction: ltr;
+}
+
+.images-wrapper {
+  .featured-image-outer {
+    height: 100%;
+    overflow: hidden;
+    margin-right: -25px;
+    width: 100%;
+    -ms-transform: skew(-10deg, 0deg); /* IE 9 */
+    -webkit-transform: skew(-10deg, 0deg); /* Safari */
+    transform: skew(-10deg, 0deg); /* Standard syntax */
+  }
+
+  .featured-image-inner {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .featured-image-inner {
+    margin-right: 25px;
+    height: 100%;
+    width: 100%;
+    -ms-transform: skew(10deg, 0deg); /* IE 9 */
+    -webkit-transform: skew(10deg, 0deg); /* Safari */
+    transform: skew(10deg, 0deg); /* Standard syntax */
+  }
+}
+
+.game-name {
+  padding: 20px 0 25px 25px;
+  h4 {
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $title-color-primary;
+    transition: all .3s ease;
+  }
+  p {
+    padding: 0 0 10px;
+    font-size: 11px;
+    color: $title-color-primary;
+    opacity: .7;
+  }
+}
+
+.console-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 25px 25px;
+  i {
+    font-size: 1rem;
+    margin-right: 16px;
+    color: $disable-text-color;
+  }
+  .enable {
+    color: $green-active;
+  }
+}

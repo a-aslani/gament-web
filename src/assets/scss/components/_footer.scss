@@ -1,0 +1,20 @@
+.footer {
+  padding: 45px 45px;
+  .footer-logo {
+    width: 160px;
+  }
+  p {
+    color: $copyright-text-color;
+  }
+  .follow-us {
+    width: 100%;
+    i {
+      font-size: 1.6em;
+      margin: 0 5px;
+      color: $copyright-text-color;
+      &:hover {
+        color: $title-color-primary;
+      }
+    }
+  }
+}

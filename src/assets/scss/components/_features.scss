@@ -1,0 +1,30 @@
+
+.featured-content {
+  background: linear-gradient(-315deg, rgba(255, 73, 0, 0.6), rgba(255, 73, 0, 0.5), rgba(20, 8, 5, 0.6), rgba(20, 8, 5, 0.7)), url('../images/featured-content-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 75px;
+  h2 {
+    font-weight: 400;
+    text-shadow: 0 1px 1px $background-primary;
+  }
+  p {
+    color: $title-color-primary;
+    text-shadow: 0 1px 1px $background-primary;
+  }
+
+  .bottom-feature-description {
+    margin-top: 75px;
+  }
+  .features-description {
+    margin-top: 15px;
+    h4 {
+      font-weight: bold;
+      text-shadow: 0 1px 1px $background-primary;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.input-left-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  input {
+    border: 1px solid $border-color-secondary;
+    border-radius: 0 4px 4px 0;
+    height: 100%;
+    background-color: $divider-color-basic;
+    color: #FFFFFF;
+    padding: 0 12px;
+    direction: ltr;
+    outline: none;
+    font-family: Arial, sans-serif;
+  }
+}
+
+.basic-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  input {
+    border: 1px solid $border-color-secondary;
+    border-radius: 4px;
+    height: 100%;
+    background-color: $divider-color-basic;
+    color: #FFFFFF;
+    padding: 0 12px;
+    direction: ltr;
+    outline: none;
+    font-family: Arial, sans-serif;
+  }
+}
+
+.full-width-input {
+  width: 100%;
+}
+
+.rtl {
+  direction: rtl !important;
+  font-family: $font-primary !important;
+  font-weight: lighter;
+  width: 100%;
+}
+.has-error {
+  border-color: $error-color !important;
+}
+
+.input-error {
+  color: $error-color !important;
+}
+
+.input-valid {
+  color: $green-active !important;
+}
+
+.is-valid {
+  border-color: $green-active !important;
+}
+
+.input-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $card-background-color;
+  border: 1px solid $border-color-secondary;
+  border-right: none;
+  height: 100%;
+  padding: 0 10px;
+  border-radius: 4px 0 0 4px;
+  p {
+    direction: ltr;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+  }
+}
+
+.input-info {
+  color: $info-text-color;
+}
