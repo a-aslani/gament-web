@@ -6,7 +6,7 @@
   margin: 0; }
 
 html, body {
-  font-family: Vazir, sans-serif;
+  font-family: IranYekan, sans-serif;
   background-color: #272A33;
   color: #FFFFFF;
   z-index: 0; }
@@ -636,7 +636,7 @@ header.header-wrapper {
 
 .rtl {
   direction: rtl !important;
-  font-family: Vazir !important;
+  font-family: IranYekan !important;
   font-weight: lighter;
   width: 100%; }
 
