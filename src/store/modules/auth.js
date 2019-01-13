@@ -75,7 +75,9 @@ const actions = {
     },
     sendActiveCode({ commit, state, dispatch }, activeCode) {
         return new Promise((resolve, reject) => {
-            axios.get(`/v1/code?phone=${state.phoneKey}&code=${activeCode}`).then(res => {
+            const formData = new FormData();
+            formData.append('code', activeCode);
+            axios.post(`/v1/code/${state.phoneKey}`, formData).then(res => {
                 if(res.status === 200 && res.data.state) {
                     const token = res.data.data.token;
                     const isNewUser = res.data.data.is_new_user;
